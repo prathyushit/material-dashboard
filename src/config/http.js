@@ -5,7 +5,7 @@ import { performLogout } from "./authUtils";
 
 // const BASE_URL = "https://6i4wiooc74.execute-api.us-east-1.amazonaws.com/";
 //const BASE_URL = "https://amekkdkvdl.execute-api.us-east-1.amazonaws.com/"; contractor account
-const BASE_URL = "https://wwbxtxwme1.execute-api.us-east-1.amazonaws.com/";
+const BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 let axiosInstance;
 axiosInstance = axios.create({
